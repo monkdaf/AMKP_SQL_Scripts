@@ -1,9 +1,9 @@
 ﻿--- create DB
-CREATE DATABASE AgborDataCollection
+CREATE DATABASE gasDataCollection
 GO
 
 --- use DB as default one
-USE [AgborDataCollection]
+USE [gasDataCollection]
 GO
 
 --- create table for current data

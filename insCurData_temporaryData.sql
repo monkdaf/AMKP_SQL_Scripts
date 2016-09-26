@@ -1,5 +1,5 @@
 ﻿--- use DB as default one
-USE [AgborDataCollection]
+USE [gasDataCollection]
 GO
 
 --- Insert data to table to CurData
