@@ -190,7 +190,7 @@ CREATE TABLE [dbo].[PlcCur07](
 	[TE3_23] [real] NOT NULL,
 	[FE3_23] [real] NOT NULL,
 	[FE3_23_norm] [real] NOT NULL,
-	[FE3_23_norm_Q] [real] NOT NULL
+	[FE3_23_norm_Q] [real] NOT NULL,
         [PE3_28] [real] NOT NULL,
 	[TE3_26] [real] NOT NULL,
 	[FE3_26] [real] NOT NULL,
@@ -215,7 +215,7 @@ CREATE TABLE [dbo].[PlcCur08](
 	[FE3_15] [real] NOT NULL,
 	[QE3_17] [real] NOT NULL,
 	[FE3_15_norm] [real] NOT NULL,
-	[FE3_15_norm_Q] [real] NOT NULL
+	[FE3_15_norm_Q] [real] NOT NULL,
         [PE3_29] [real] NOT NULL,
 	[TE3_27] [real] NOT NULL,
 	[FE3_27] [real] NOT NULL,
@@ -244,7 +244,7 @@ CREATE TABLE [dbo].[PlcCur09](
 	[FE3_12] [real] NOT NULL,
 	[QE3_14] [real] NOT NULL,
 	[FE3_12_norm] [real] NOT NULL,
-	[FE3_12_norm_Q] [real] NOT NULL
+	[FE3_12_norm_Q] [real] NOT NULL,
         [PE3_26] [real] NOT NULL,
 	[TE3_25] [real] NOT NULL,
 	[FE3_24] [real] NOT NULL,
@@ -261,7 +261,7 @@ CREATE TABLE [dbo].[PlcCur10](
 	[FE3_13] [real] NOT NULL,
 	[QE3_15] [real] NOT NULL,
 	[FE3_13_norm] [real] NOT NULL,
-	[FE3_13_norm_Q] [real] NOT NULL
+	[FE3_13_norm_Q] [real] NOT NULL,
 	[PE3_27] [real] NOT NULL,
 	[TE3_25] [real] NOT NULL,
 	[FE3_25] [real] NOT NULL,
@@ -468,7 +468,7 @@ CREATE TABLE [dbo].[PlcSum07](
 	[TE3_23] [real] NOT NULL,
 	[FE3_23] [real] NOT NULL,
 	[FE3_23_norm] [real] NOT NULL,
-	[FE3_23_norm_Q] [real] NOT NULL
+	[FE3_23_norm_Q] [real] NOT NULL,
         [PE3_28] [real] NOT NULL,
 	[TE3_26] [real] NOT NULL,
 	[FE3_26] [real] NOT NULL,
@@ -493,7 +493,7 @@ CREATE TABLE [dbo].[PlcSum08](
 	[FE3_15] [real] NOT NULL,
 	[QE3_17] [real] NOT NULL,
 	[FE3_15_norm] [real] NOT NULL,
-	[FE3_15_norm_Q] [real] NOT NULL
+	[FE3_15_norm_Q] [real] NOT NULL,
         [PE3_29] [real] NOT NULL,
 	[TE3_27] [real] NOT NULL,
 	[FE3_27] [real] NOT NULL,
@@ -522,7 +522,7 @@ CREATE TABLE [dbo].[PlcSum09](
 	[FE3_12] [real] NOT NULL,
 	[QE3_14] [real] NOT NULL,
 	[FE3_12_norm] [real] NOT NULL,
-	[FE3_12_norm_Q] [real] NOT NULL
+	[FE3_12_norm_Q] [real] NOT NULL,
         [PE3_26] [real] NOT NULL,
 	[TE3_25] [real] NOT NULL,
 	[FE3_24] [real] NOT NULL,
@@ -539,7 +539,7 @@ CREATE TABLE [dbo].[PlcSum10](
 	[FE3_13] [real] NOT NULL,
 	[QE3_15] [real] NOT NULL,
 	[FE3_13_norm] [real] NOT NULL,
-	[FE3_13_norm_Q] [real] NOT NULL
+	[FE3_13_norm_Q] [real] NOT NULL,
 	[PE3_27] [real] NOT NULL,
 	[TE3_25] [real] NOT NULL,
 	[FE3_25] [real] NOT NULL,
@@ -747,7 +747,7 @@ CREATE TABLE [dbo].[TempCur07](
 	[TE3_23] [real] NOT NULL,
 	[FE3_23] [real] NOT NULL,
 	[FE3_23_norm] [real] NOT NULL,
-	[FE3_23_norm_Q] [real] NOT NULL
+	[FE3_23_norm_Q] [real] NOT NULL,
         [PE3_28] [real] NOT NULL,
 	[TE3_26] [real] NOT NULL,
 	[FE3_26] [real] NOT NULL,
@@ -772,7 +772,7 @@ CREATE TABLE [dbo].[TempCur08](
 	[FE3_15] [real] NOT NULL,
 	[QE3_17] [real] NOT NULL,
 	[FE3_15_norm] [real] NOT NULL,
-	[FE3_15_norm_Q] [real] NOT NULL
+	[FE3_15_norm_Q] [real] NOT NULL,
         [PE3_29] [real] NOT NULL,
 	[TE3_27] [real] NOT NULL,
 	[FE3_27] [real] NOT NULL,
@@ -801,7 +801,7 @@ CREATE TABLE [dbo].[TempCur09](
 	[FE3_12] [real] NOT NULL,
 	[QE3_14] [real] NOT NULL,
 	[FE3_12_norm] [real] NOT NULL,
-	[FE3_12_norm_Q] [real] NOT NULL
+	[FE3_12_norm_Q] [real] NOT NULL,
         [PE3_26] [real] NOT NULL,
 	[TE3_25] [real] NOT NULL,
 	[FE3_24] [real] NOT NULL,
@@ -818,7 +818,7 @@ CREATE TABLE [dbo].[TempCur10](
 	[FE3_13] [real] NOT NULL,
 	[QE3_15] [real] NOT NULL,
 	[FE3_13_norm] [real] NOT NULL,
-	[FE3_13_norm_Q] [real] NOT NULL
+	[FE3_13_norm_Q] [real] NOT NULL,
 	[PE3_27] [real] NOT NULL,
 	[TE3_25] [real] NOT NULL,
 	[FE3_25] [real] NOT NULL,
@@ -1025,7 +1025,7 @@ CREATE TABLE [dbo].[TempSum07](
 	[TE3_23] [real] NOT NULL,
 	[FE3_23] [real] NOT NULL,
 	[FE3_23_norm] [real] NOT NULL,
-	[FE3_23_norm_Q] [real] NOT NULL
+	[FE3_23_norm_Q] [real] NOT NULL,
         [PE3_28] [real] NOT NULL,
 	[TE3_26] [real] NOT NULL,
 	[FE3_26] [real] NOT NULL,
@@ -1050,7 +1050,7 @@ CREATE TABLE [dbo].[TempSum08](
 	[FE3_15] [real] NOT NULL,
 	[QE3_17] [real] NOT NULL,
 	[FE3_15_norm] [real] NOT NULL,
-	[FE3_15_norm_Q] [real] NOT NULL
+	[FE3_15_norm_Q] [real] NOT NULL,
         [PE3_29] [real] NOT NULL,
 	[TE3_27] [real] NOT NULL,
 	[FE3_27] [real] NOT NULL,
@@ -1079,7 +1079,7 @@ CREATE TABLE [dbo].[TempSum09](
 	[FE3_12] [real] NOT NULL,
 	[QE3_14] [real] NOT NULL,
 	[FE3_12_norm] [real] NOT NULL,
-	[FE3_12_norm_Q] [real] NOT NULL
+	[FE3_12_norm_Q] [real] NOT NULL,
         [PE3_26] [real] NOT NULL,
 	[TE3_25] [real] NOT NULL,
 	[FE3_24] [real] NOT NULL,
@@ -1096,7 +1096,7 @@ CREATE TABLE [dbo].[TempSum10](
 	[FE3_13] [real] NOT NULL,
 	[QE3_15] [real] NOT NULL,
 	[FE3_13_norm] [real] NOT NULL,
-	[FE3_13_norm_Q] [real] NOT NULL
+	[FE3_13_norm_Q] [real] NOT NULL,
 	[PE3_27] [real] NOT NULL,
 	[TE3_25] [real] NOT NULL,
 	[FE3_25] [real] NOT NULL,
