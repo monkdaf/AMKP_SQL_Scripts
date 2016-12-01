@@ -1,0 +1,3 @@
+USE [KRR-PA-ISA95_PRODUCTION]
+GO
+EXEC [dbo].[gcFullTransfer]
