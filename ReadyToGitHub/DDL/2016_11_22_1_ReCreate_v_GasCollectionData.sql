@@ -1,8 +1,4 @@
-﻿--- use DB as default one
-USE [KRR-PA-ISA95_PRODUCTION]
-GO
-
-SET QUOTED_IDENTIFIER ON
+﻿SET QUOTED_IDENTIFIER ON
 GO
 
 IF OBJECT_ID ('dbo.v_GasCollectionData',N'V') IS NOT NULL
