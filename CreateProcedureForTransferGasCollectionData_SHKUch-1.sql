@@ -279,7 +279,7 @@ GO
 USE [KRR-PA-ISA95_PRODUCTION]
 GO
 
-/****** Object:  StoredProcedure [dbo].[UpdateSumData]    Script Date: 29.11.2016 12:27:14 ******/
+/****** Object:  StoredProcedure [dbo].[gcUpdateSumData]    Script Date: 29.11.2016 12:27:14 ******/
 SET ANSI_NULLS ON
 GO
 

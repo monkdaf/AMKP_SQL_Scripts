@@ -1,0 +1,10 @@
+﻿--- use DB as default one
+USE [KRR-PA-CNT-GasForISA95]
+GO
+
+--- Insert
+INSERT INTO [dbo].[PlcCur01](dt, PE1_1, TE1_1, QE1_1, FE1_1, FE1_1_norm, FE1_1_norm_Q)
+VALUES ('2016-11-29 14:41:00.000', 1.087056, 11.66129, 98.72, 77.06062, 987.5487, 654.2547);
+
+INSERT INTO [dbo].[PlcCur01](dt, PE1_1, TE1_1, QE1_1, FE1_1, FE1_1_norm, FE1_1_norm_Q)
+VALUES ('2016-11-29 14:40:30.000', 2.087056, 12.66129, 92.72, 72.06062, 982.5487, 652.2547);
