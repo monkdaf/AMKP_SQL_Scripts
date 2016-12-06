@@ -22,8 +22,8 @@ CREATE PROCEDURE [dbo].[gcFullTransfer]
 
 AS
 BEGIN
- @eID int, @peID int, @teID int, @qeID int, @feID int, @fenID int, @feqID int,
- @mcID int, @mdID int, @mu nvarchar(50)
+--  @eID int, @peID int, @teID int, @qeID int, @feID int, @fenID int, @feqID int,
+--  @mcID int, @mdID int, @mu nvarchar(50)
 -- mcID - materialClass ID: 10000 - Газы
 -- mвID - materialDefinition ID: Кислород - 10000, Азот - 10001, Сжатый воздух - 10002
 
@@ -55,10 +55,10 @@ BEGIN
 --	-- FE2.3
 --	EXEC gcTransferToISA95 10121,112,113,0,114,115,0,10000, 10002,'consumed'
 
---	SET NOCOUNT ON;
---	EXEC gcCurDateTransfer10
---	EXEC gcSumDateTransfer10
---	-- FE3.13
---	EXEC gcTransferToISA95 10180,171,172,173,174,175,176,10000, 10000,'consumed'
+	SET NOCOUNT ON;
+	EXEC gcCurDateTransfer10
+	EXEC gcSumDateTransfer10
+	-- FE3.13
+	EXEC gcTransferToISA95 10180,171,172,174,173,175,176,10000, 10000,'consumed'
 
 END

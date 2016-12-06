@@ -80,28 +80,28 @@ BEGIN
 	WHILE @@ROWCOUNT<>0 
 	BEGIN
 
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 177, @Value = @PE_7103_04A_P06
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 178, @Value = @TE_7103_04A_T01
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 179, @Value = @FE_7103_04A_F02
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 180, @Value = @QE_7101_10_A66 
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 181, @Value = @FE_7103_04A_F02_norm 
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 182, @Value = @FE_7103_04A_F02_norm_Q
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 183, @Value = @PE_7103_04B_P06 
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 184, @Value = @TE_7103_04B_T01 
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 185, @Value = @FE_7103_04B_F02 
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 186, @Value = @FE_7103_04B_F02_norm
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 187, @Value = @FE_7103_04B_F02_norm_Q 
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 188, @Value = @PE_7105_04_P06 
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 189, @Value = @TE_7105_04_T01 
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 190, @Value = @FE_7105_04_F02 
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 191, @Value = @FE_7105_04_F02_norm 
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 192, @Value = @FE_7105_04_F02_norm_Q 
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 193, @Value = @PE_7303_04_P06
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 194, @Value = @TE_7303_04_T01
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 195, @Value = @FE_7303_04_F02
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 196, @Value = @QE_7303_10_A56
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 197, @Value = @FE_7303_04_F02_norm
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 198, @Value = @FE_7303_04_F02_norm_Q  
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 177, @Value = @PE_7103_04A_P06
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 178, @Value = @TE_7103_04A_T01
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 179, @Value = @FE_7103_04A_F02
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 180, @Value = @QE_7101_10_A66 
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 181, @Value = @FE_7103_04A_F02_norm 
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 182, @Value = @FE_7103_04A_F02_norm_Q
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 183, @Value = @PE_7103_04B_P06 
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 184, @Value = @TE_7103_04B_T01 
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 185, @Value = @FE_7103_04B_F02 
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 186, @Value = @FE_7103_04B_F02_norm
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 187, @Value = @FE_7103_04B_F02_norm_Q 
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 188, @Value = @PE_7105_04_P06 
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 189, @Value = @TE_7105_04_T01 
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 190, @Value = @FE_7105_04_F02 
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 191, @Value = @FE_7105_04_F02_norm 
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 192, @Value = @FE_7105_04_F02_norm_Q 
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 193, @Value = @PE_7303_04_P06
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 194, @Value = @TE_7303_04_T01
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 195, @Value = @FE_7303_04_F02
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 196, @Value = @QE_7303_10_A56
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 197, @Value = @FE_7303_04_F02_norm
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 198, @Value = @FE_7303_04_F02_norm_Q  
 
 		DELETE FROM [dbo].[PlcSum11] WHERE dt=@dt
 

@@ -72,24 +72,24 @@ BEGIN
 	WHILE @@ROWCOUNT<>0 
 	BEGIN
 
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 86, @Value  = @PE1_3
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 87, @Value  = @TE1_3
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 88, @Value  = @FE1_3
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 89, @Value  = @QE1_3
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 90, @Value  = @FE1_3_norm
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 91, @Value  = @FE1_3_norm_Q
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 92, @Value  = @PE1_4
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 93, @Value  = @TE1_4
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 94, @Value  = @FE1_4
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 95, @Value  = @FE1_4_norm
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 96, @Value  = @FE1_4_norm_Q
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 97, @Value  = @PE3_9
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 98, @Value  = @TE3_9
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 99, @Value  = @FE3_9
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 100, @Value = @QE3_10
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 101, @Value = @FE3_9_norm
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 102, @Value = @FE3_9_norm_Q
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 103, @Value = @QE3_11
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 86, @Value  = @PE1_3
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 87, @Value  = @TE1_3
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 88, @Value  = @FE1_3
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 89, @Value  = @QE1_3
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 90, @Value  = @FE1_3_norm
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 91, @Value  = @FE1_3_norm_Q
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 92, @Value  = @PE1_4
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 93, @Value  = @TE1_4
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 94, @Value  = @FE1_4
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 95, @Value  = @FE1_4_norm
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 96, @Value  = @FE1_4_norm_Q
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 97, @Value  = @PE3_9
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 98, @Value  = @TE3_9
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 99, @Value  = @FE3_9
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 100, @Value = @QE3_10
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 101, @Value = @FE3_9_norm
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 102, @Value = @FE3_9_norm_Q
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 103, @Value = @QE3_11
 	
 		DELETE FROM [dbo].[PlcSum05] WHERE dt=@dt
 	

@@ -72,24 +72,24 @@ BEGIN
 	WHILE @@ROWCOUNT<>0 
 	BEGIN
 
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 153, @Value = @PE3_10
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 154, @Value = @TE3_10
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 155, @Value = @FE3_10
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 156, @Value = @QE3_12
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 157, @Value = @FE3_10_norm
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 158, @Value = @FE3_10_norm_Q
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 159, @Value = @PE3_11
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 160, @Value = @TE3_11
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 161, @Value = @FE3_11
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 162, @Value = @QE3_13
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 163, @Value = @FE3_11_norm
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 164, @Value = @FE3_11_norm_Q
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 165, @Value = @PE3_12
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 166, @Value = @TE3_12
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 167, @Value = @FE3_12
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 168, @Value = @QE3_14
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 169, @Value = @FE3_12_norm
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 170, @Value = @FE3_12_norm_Q
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 153, @Value = @PE3_10
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 154, @Value = @TE3_10
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 155, @Value = @FE3_10
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 156, @Value = @QE3_12
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 157, @Value = @FE3_10_norm
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 158, @Value = @FE3_10_norm_Q
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 159, @Value = @PE3_11
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 160, @Value = @TE3_11
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 161, @Value = @FE3_11
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 162, @Value = @QE3_13
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 163, @Value = @FE3_11_norm
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 164, @Value = @FE3_11_norm_Q
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 165, @Value = @PE3_12
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 166, @Value = @TE3_12
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 167, @Value = @FE3_12
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 168, @Value = @QE3_14
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 169, @Value = @FE3_12_norm
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 170, @Value = @FE3_12_norm_Q
 
 		DELETE FROM [dbo].[PlcSum09] WHERE dt=@dt
 

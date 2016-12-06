@@ -109,7 +109,7 @@ BEGIN
 	EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 84, @Value = @QE3_3
 	EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 85, @Value = @QE3_4
 
-		DELETE FROM [dbo].[PlcSum01] WHERE dt=@dt
+		DELETE FROM [dbo].[PlcSum04] WHERE dt=@dt
 
 		SELECT TOP 1
 			@dt = dt,

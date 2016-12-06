@@ -48,12 +48,12 @@ BEGIN
 	WHILE @@ROWCOUNT<>0 
 	BEGIN
 
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 171, @Value = @PE3_13
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 172, @Value = @TE3_13
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 173, @Value = @FE3_13
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 174, @Value = @QE3_15
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 175, @Value = @FE3_13_norm
-		EXECUTE [dbo].[gcUpdateCurData] @dt = @dt, @ID = 176, @Value = @FE3_13_norm_Q
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 171, @Value = @PE3_13
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 172, @Value = @TE3_13
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 173, @Value = @FE3_13
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 174, @Value = @QE3_15
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 175, @Value = @FE3_13_norm
+		EXECUTE [dbo].[gcUpdateSumData] @dt = @dt, @ID = 176, @Value = @FE3_13_norm_Q
 	
 		DELETE FROM [dbo].[PlcSum10] WHERE dt=@dt
 	
