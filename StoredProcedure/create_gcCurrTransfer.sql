@@ -1,12 +1,12 @@
 ﻿USE [KRR-PA-CNT-GasForISA95]
 GO
-/****** Object:  StoredProcedure [dbo].[gcCurrTransfer]    Script Date: 1/11/2017 10:33:02 AM ******/
+/****** Object:  StoredProcedure [dbo].[gcCurrTransfer]    Script Date: 2/6/2017 2:29:19 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE PROCEDURE [dbo].[gcCurrTransfer]
+ALTER PROCEDURE [dbo].[gcCurrTransfer]
 
 AS
 BEGIN
@@ -21,6 +21,7 @@ BEGIN
 --	EXEC gcCurDateTransfer08
 --	EXEC gcCurDateTransfer09
 	EXEC gcCurDateTransfer10
---	EXEC gcCurDateTransfer11
+	EXEC gcCurDateTransfer11
+	EXEC gcCurDateTransferOlvia
 
 END
