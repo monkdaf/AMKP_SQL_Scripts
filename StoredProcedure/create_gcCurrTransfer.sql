@@ -18,8 +18,8 @@ BEGIN
 	EXEC gcCurDateTransfer04
 	EXEC gcCurDateTransfer05
 	EXEC gcCurDateTransfer07
---	EXEC gcCurDateTransfer08
---	EXEC gcCurDateTransfer09
+	EXEC gcCurDateTransfer08
+	EXEC gcCurDateTransfer09
 	EXEC gcCurDateTransfer10
 	EXEC gcCurDateTransfer11
 	EXEC gcCurDateTransferOlvia

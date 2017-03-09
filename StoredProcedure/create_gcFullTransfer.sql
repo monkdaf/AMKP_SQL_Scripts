@@ -1,6 +1,6 @@
 ﻿USE [KRR-PA-CNT-GasForISA95]
 GO
-/****** Object:  StoredProcedure [dbo].[gcFullTransfer]    Script Date: 2/6/2017 2:27:26 PM ******/
+/****** Object:  StoredProcedure [dbo].[gcFullTransfer]    Script Date: 2/8/2017 2:31:31 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -101,7 +101,33 @@ BEGIN
 --	-- FE3.23
 	EXEC gcTransferToISA95 10143,134,135,0,136,137,138,10000, 10000,'consumed'
 --	-- FE3.26
---	EXEC gcTransferToISA95 10144,199,200,0,201,202,203,10000, 10000,'consumed'
+	EXEC gcTransferToISA95 10144,199,200,0,201,202,203,10000, 10000,'consumed'
+
+	--SET NOCOUNT ON;
+--	EXEC gcCurDateTransfer08
+	EXEC gcSumDateTransfer08
+	-- PE3.14
+	EXEC gcTransferToISA95 10148,139,0,0,0,0,0,10000, 10000,'consumed'
+	-- PE3.15
+	EXEC gcTransferToISA95 10149,140,0,0,0,0,0,10000, 10000,'consumed'
+	-- FE3.14
+	EXEC gcTransferToISA95 10150,141,142,144,143,145,146,10000, 10000,'consumed'
+	-- FE3.15
+	EXEC gcTransferToISA95 10156,147,148,150,149,151,152,10000, 10000,'consumed'
+	-- FE3.27
+	EXEC gcTransferToISA95 10157,204,205,0,206,207,208,10000, 10000,'consumed'
+
+	--SET NOCOUNT ON;
+--	EXEC gcCurDateTransfer09
+	EXEC gcSumDateTransfer09
+	-- FE3.10
+	EXEC gcTransferToISA95 10162,153,154,156,155,157,158,10000, 10000,'consumed'
+	-- FE3.11
+	EXEC gcTransferToISA95 10168,159,160,162,161,163,164,10000, 10000,'consumed'
+	-- FE3.12
+	EXEC gcTransferToISA95 10174,165,166,168,167,169,170,10000, 10000,'consumed'
+	-- FE3.24
+	EXEC gcTransferToISA95 10175,209,210,0,211,212,213,10000, 10000,'consumed'
 
 	--SET NOCOUNT ON;
 --	EXEC gcCurDateTransfer10
