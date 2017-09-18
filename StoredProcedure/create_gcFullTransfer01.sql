@@ -1,0 +1,20 @@
+﻿
+USE [KRR-PA-CNT-GasForISA95]
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[gcFullTransfer01]
+
+AS
+BEGIN
+	SET NOCOUNT ON;
+
+	EXEC gcSumDateTransfer01
+	-- FE1.1
+	EXEC gcTransferToISA95 10010,1,2,3,4,5,6,10000, 10001,'consumed'
+
+END
